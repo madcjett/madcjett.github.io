@@ -1,42 +1,118 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Basic styling for the personal works page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e2cde9; /* Soft pink background */
+    margin: 0;
+    padding: 0;
+    color: #4a2c4d; /* Dark purple text */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header {
+    background-color: #9b59b6; /* Rich purple */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    background-image: url("banner.jpg");
+    background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.App-header h1 {
+    font-size: 2.5em;
 }
 
-.card {
-  padding: 2em;
+.App-header p {
+    font-size: 1.2em;
 }
 
-.read-the-docs {
-  color: #888;
+.projects,
+.work-experience,
+.education {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px 0;
+}
+
+.projects h2,
+.work-experience h2,
+.education h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #6a3b7e; /* Muted purple for section titles */
+}
+
+.project-card,
+.work-card,
+.education-card {
+    background-color: #ffffff; /* Clean white background for cards */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px;
+    border: 2px solid #d6a9e3; /* Light purple border */
+}
+
+.project-card h3,
+.work-card h3,
+.education-card h3 {
+    margin: 0;
+    font-size: 1.6em;
+    color: #9b59b6; /* Rich purple for headings */
+}
+
+.project-card p,
+.work-card p,
+.education-card p {
+    font-size: 1em;
+    color: #6a3b7e; /* Muted purple text */
+}
+
+.project-card a {
+    color: #aa90c5; /* Soft pink for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+    color: #f27c8e; /* Brighter pink on hover */
+}
+
+.education-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #6a3b7e; /* Muted purple for list items */
+}
+
+/* Add subtle background color to sections */
+.projects,
+.work-experience,
+.education {
+    background-color: #c29fea; /* Soft blush pink background for sections */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.App-footer {
+    background-color: #4c2d59; /* Rich purple (same as header) */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.App-footer p {
+    margin: 0;
+    font-size: 1em;
 }
