@@ -6,19 +6,16 @@ const projects = [
     {
         title: "Personal Portfolio Website",
         description: "A responsive portfolio website built using React, showcasing my skills, projects, and resume.",
-        technologies: "React, CSS, HTML",
         link: "https://yourportfolio.com",
     },
     {
         title: "Weather App",
         description: "A weather application that fetches data from OpenWeather API to show current weather and forecast.",
-        technologies: "React, JavaScript, OpenWeather API",
         link: "https://weatherapp.com",
     },
     {
         title: "Task Manager App",
         description: "A to-do list application where users can create, edit, and delete tasks. It uses local storage to save tasks.",
-        technologies: "React, JavaScript, Local Storage",
         link: "https://taskmanagerapp.com",
     }
 ];
@@ -26,22 +23,22 @@ const projects = [
 // Sample work experience data
 const workExperience = [
     {
-        jobTitle: "Important Person",
+        jobTitle: "Customer Service",
         company: "Fabletics.",
-        duration: "June 2024 – Present",
-        description: "Worked on developing user interfaces for client websites using React and JavaScript. Collaborated with the design team to create responsive web pages."
+        duration: "Past – Present",
+        description: "Clothing stuff."
     },
     {
-        jobTitle: "Treasurer",
-        company: "Startup X",
-        duration: "June 2023 – Present",
-        description: "Developed features for the company’s internal tool using Python and Flask. Worked on bug fixes and assisted in improving the tool’s performance."
+        jobTitle: "VP of Finance",
+        company: "Alpha Delta Pi",
+        duration: "Past – Present",
+        description: "Money stuff."
     },
     {
         jobTitle: "Recruitment Analyst",
-        company: "Startup X",
+        company: "Alpha Delta Pi",
         duration: "August 2025 – Present",
-        description: "Developed features for the company’s internal tool using Python and Flask. Worked on bug fixes and assisted in improving the tool’s performance."
+        description: "Number stuff."
     }
 ];
 
@@ -50,20 +47,18 @@ const education = [
     {
         school: "Cal State Fullerton",
         degree: "Bachelor of Arts in English",
-        duration: "September 2021 – May 2025",
+        duration: "September 2023 – May 2026",
         achievements: [
-            "Dean's List (2023)",
-            "Member of the Coding Club",
-            "Completed courses in Algorithms, Data Structures, Web Development, and Machine Learning"
+            "Achievement"
         ]
     },
     {
         school: "Bonita High School",
         degree: "High School Diploma",
-        duration: "September 2019 – May 2023",
+        duration: "August 2019 – June 2023",
         achievements: [
-            "Achieve",
-            "Achievement 1"
+            "Apex Honors",
+            "Senior Class Council"
         ]
     }
 ];
@@ -73,20 +68,20 @@ const App = () => {
         <div className="App">
             <header className="App-header">
                 <h1>Madison C. Jett</h1>
-                <p>The greatest person ever.</p>
+                <p>The greatest sister ever.</p>
             </header>
 
-            <section className="projects">
-                <h2>Sample Writings</h2>
-                {projects.map((project, index) => (
-                    <div key={index} className="project-card">
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <p><strong>Technologies:</strong> {project.technologies}</p>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                    </div>
-                ))}
-            </section>
+            {/*<section className="projects">*/}
+            {/*    <h2>Sample Writings</h2>*/}
+            {/*    {projects.map((project, index) => (*/}
+            {/*        <div key={index} className="project-card">*/}
+            {/*            <h3>{project.title}</h3>*/}
+            {/*            <p>{project.description}</p>*/}
+            {/*            <p><strong>Technologies:</strong> {project.technologies}</p>*/}
+            {/*            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>*/}
+            {/*        </div>*/}
+            {/*    ))}*/}
+            {/*</section>*/}
 
             {/* Work Experience Section */}
             <section className="work-experience">
@@ -117,7 +112,7 @@ const App = () => {
             </section>
 
             <footer className="App-footer">
-                <p>Contact:</p>
+                <p>Love, B</p>
             </footer>
         </div>
     );

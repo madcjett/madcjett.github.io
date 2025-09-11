@@ -4,7 +4,8 @@ body {
     background-color: #e2cde9; /* Soft pink background */
     margin: 0;
     padding: 0;
-    color: #4a2c4d; /* Dark purple text */
+    background-image: url("banner.jpg");
+    background-size: cover;
 }
 
 .App {
@@ -13,16 +14,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 20px;
 }
 
 .App-header {
-    background-color: #9b59b6; /* Rich purple */
     color: white;
     padding: 20px;
     width: 100%;
-    background-image: url("banner.jpg");
-    background-size: cover;
+
 }
 
 .App-header h1 {
@@ -37,16 +35,17 @@ body {
 .work-experience,
 .education {
     width: 80%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .projects h2,
 .work-experience h2,
 .education h2 {
     font-size: 2em;
-    margin-bottom: 20px;
-    color: #6a3b7e; /* Muted purple for section titles */
+    color: #fffdff; /* Muted purple for section titles */
+    text-align: center;
 }
 
 .project-card,
@@ -66,14 +65,14 @@ body {
 .education-card h3 {
     margin: 0;
     font-size: 1.6em;
-    color: #9b59b6; /* Rich purple for headings */
+    color: #3d2945; /* Rich purple for headings */
 }
 
 .project-card p,
 .work-card p,
 .education-card p {
     font-size: 1em;
-    color: #6a3b7e; /* Muted purple text */
+    color: #361f40; /* Muted purple text */
 }
 
 .project-card a {
@@ -97,13 +96,13 @@ body {
 .projects,
 .work-experience,
 .education {
-    background-color: #c29fea; /* Soft blush pink background for sections */
+    background-color: #5b5295; /* Soft blush pink background for sections */
     padding: 20px;
     border-radius: 8px;
 }
 
 .App-footer {
-    background-color: #4c2d59; /* Rich purple (same as header) */
+    background-color: #c0add8; /* Rich purple (same as header) */
     color: white;
     padding: 10px;
     width: 100%;
